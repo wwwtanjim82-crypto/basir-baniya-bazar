@@ -1,0 +1,408 @@
+<html>
+<head>
+<title>Basir Baniya Bazar - Md. Tanjimul Islam</title>
+    <meta name="description" content="Welcome to Basir Baniya Bazar. A beautiful village profile created by Md. Tanjimul Islam from Rangpur, Dinajpur.">
+    <meta name="keywords" content="Basir Baniya Bazar, Tanjimul Islam, Rangpur, Village Profile, Tanjimul Website">
+    <meta name="author" content="Md. Tanjimul Islam">
+    <style>
+        #aboutBox {
+            width: 70%;
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            display: none; /* প্রথমে লুকানো থাকবে */
+            font-family: Arial;
+            position: fixed; /* স্ক্রিনের মাঝখানে দেখানোর জন্য */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+
+        /* About এর ছবির স্টাইল */
+        #aboutBox img.profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            object-fit: cover; /* ছবি চ্যাপ্টা না হয়ে সুন্দর দেখাবে */
+            border: 2px solid #0a4d70; /* ছবির চারপাশে বর্ডার */
+        }
+
+        #socialIcons img {
+            width: 45px;
+            margin: 6px;
+            cursor: pointer;
+            border: none; /* আইকনে বর্ডার দরকার নেই */
+        }
+
+        #closeBtn {
+            background: #d9534f;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* বাটনগুলো সুন্দর দেখানোর জন্য স্টাইল */
+        .nav-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0a4d70;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .nav-btn:hover {
+            background-color: #063750;
+        }
+		/* ফটো গ্যালারি বক্সের ডিজাইন */
+        #photoBox {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            display: none; /* প্রথমে লুকানো থাকবে */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            max-height: 80vh; /* স্ক্রিনের চেয়ে বড় হলে স্ক্রল হবে */
+            overflow-y: auto; 
+            text-align: center;
+        }
+
+        /* গ্যালারির ছবির সাইজ */
+        .gallery-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 5px;
+            border: 2px solid #eee;
+            transition: 0.3s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+            border-color: #0a4d70;
+        }
+		/* ভিডিও বক্সের ডিজাইন */
+        #videoBox {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+        /* ভিডিও সুন্দর দেখানোর জন্য */
+        iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Wellcome To My Village </h1>
+
+ <img src="tt.gif" style="max-width: 100%; height: auto;">
+ <br>
+ <br>
+ 
+ <button class="nav-btn" onclick="window.location.reload()"> Home </button>
+ <button class="nav-btn" onclick="document.getElementById('aboutBox').style.display='block'"> About Us </button>
+<button class="nav-btn" onclick="document.getElementById('photoBox').style.display='block'"> Photos </button>
+<button class="nav-btn" onclick="document.getElementById('videoBox').style.display='block'"> Videos </button>
+<div id="aboutBox">
+  <center>
+    <img src="tttt.jpg" alt="Profile Photo" class="profile-pic">
+    
+    <h2>Md. Tanjimul Islam</h2>
+    
+    <div style="text-align: left; display: inline-block; margin-top: 10px;">
+        <p><b>Father's Name:</b> Md. Aminur Islam</p>
+        <p><b>Mother's Name:</b> Mst. Nilufer Yeassmin</p>
+        <p><b>Age:</b> 20</p>
+        <p><b>Profession:</b> Graphics Designer & Web Designer</p>
+        <p><b>Contact:</b> +8801730293603</p>
+        <p><b>Location:</b> Dinajpur, Parbatipur, Uttar Shalonder, Rangpur</p>
+    </div>
+
+    <br><br>
+
+    <div id="socialIcons">
+      <a href="https://web.facebook.com/md.tanjimulislam530105" target="_blank">
+        <img src="https://i.ibb.co/Lt2pZMs/facebook.png">
+      </a>
+      <a href="https://www.youtube.com/@TanzimTechOfficial" target="_blank">
+        <img src="https://i.ibb.co/1f8QK12/youtube.png">
+      </a>
+      <a href="https://tanjim82.blogspot.com/" target="_blank">
+        <img src="https://i.ibb.co/YZ2dWSG/blogger.png">
+      </a>
+    </div>
+    <br>
+    <button id="closeBtn" onclick="document.getElementById('aboutBox').style.display='none'">Close</button>
+  </center>
+</div>
+<div id="photoBox">
+    <h2 style="color: #0a4d70;">📸 My Photo Gallery</h2>
+    <hr style="width: 50%; margin: auto; margin-bottom: 15px;">
+
+    <img src="g.jpg" class="gallery-img" alt="Photo 1">
+    <img src="gg.jpg" class="gallery-img" alt="Photo 2">
+    <img src="ggg.jpg" class="gallery-img" alt="Photo 3">
+    
+    <br><br>
+    <button id="closeBtn" onclick="document.getElementById('photoBox').style.display='none'">Close Gallery</button>
+</div>
+
+ <br><br>
+ <button> Located:Rangpur, Dinajpur, Parbatipur, Uttar Shalonder.</button>
+
+
+ <section style="max-width:900px;margin:28px auto;padding:20px;border-radius:10px;
+                background: linear-gradient(180deg,#fff8eb,#fff1f0);box-shadow:0 6px 20px rgba(0,0,0,0.08);
+                font-family: Arial, sans-serif;color:#111;">
+  <h1 style="margin:0 0 8px 0;font-size:28px;letter-spacing:0.2px;">
+    My area is very beautiful, well-known and full of pride
+  </h1>
+
+  <h2 style="margin:0;font-size:18px;font-weight:600;line-height:1.5;">
+    But we are still facing some terrible issues:
+    <span style="color:#e63946;font-weight:700;">Drugs</span>,
+    <span style="color:#a66e3a;font-weight:700;">Garbage</span>,
+    <span style="color:#f59e0b;font-weight:700;">Fighting</span>,
+    <span style="color:#6b21a8;font-weight:700;">Crime</span>
+  </h2>
+
+  <p style="margin-top:12px;color:#444;font-size:14px;">
+
+  </p>
+</section>
+<div style="text-align: center; margin: 20px auto; max-width: 900px;">
+    <img src="i.png" alt="My Village Area" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+</div>
+
+
+
+<div style="background: linear-gradient(135deg,#4b0082,#8a2be2,#9400d3,#ff1493); padding: 25px; border-radius: 12px; color: #ffffff; font-size: 19px; line-height: 32px; font-family: 'Poppins', sans-serif; text-align: justify;">
+
+<p>
+My village is quite vast in size and holds great significance. At the very heart of our area lies a large and bustling marketplace. The most remarkable thing about this market is that you can easily find almost everything you need for daily life, all within arm’s reach. It truly stands as the commercial center of our entire region.
+</p>
+
+<p>
+Not far from our village flows a magnificent river. Whenever we want, we can go to its banks to enjoy peace and pure happiness. The river feels like an inseparable part of the beauty of our village. At the end of a busy day, right when the time for the Isha prayer approaches, a mysterious silence settles around the field next to the cremation ground where the brick kilns are located. This place silently witnesses the cycle of hard labor, just like the rhythm of the tides.
+</p>
+
+<p>
+In the brick kilns, workers once came for a fixed period—three months or even six months. During this entire time, they remained almost disconnected from the outside world. The workers labored under such harsh conditions that they hardly found any opportunity to express their needs or complaints. After fulfilling their most basic necessities, they devoted themselves silently to making bricks—almost as if bound by an invisible contract where there was no expectation beyond relentless hard work.
+</p>
+
+<p>
+Our area is also like the center point of intense political heat. Political conflicts, fights, and shootings have become almost daily events here. One thing is clear—no one is willing to give even an inch to the other. Competition is so fierce that every individual seems eager to remain on top. The constant hunger for power and influence continues to affect the daily lives of the people of the village.
+</p>
+
+<p>
+Despite the political unrest, our region is remarkably advanced in terms of education and infrastructure. Right beside the marketplace stands a foundation of learning—first a primary school, followed by a high school, and then a complete college. In addition to that, several private educational institutions have been established around the area. Because education and other facilities are now so easily accessible, this village is no longer just a village; it is gradually transforming into a modern town. This rapid development proves that our area is progressing toward growth and advancement.
+</p>
+
+<p>
+However, despite this fast development, the influence of local politics remains very visible around our home. Although our Union Chairman was a supporter of the ruling Awami League government, we were still deprived of a very important development. Unfortunately, the small road beside our house—which should have become a part of the main Ring Road—was never upgraded or paved into a proper road. As a result, residents of our neighborhood are deprived of a basic civic necessity.
+</p>
+
+<p>
+This proves that even if a party remains in power at the national level, important local development often remains stuck due to the lack of goodwill or initiative of local leaders. In regions where political ego and rivalry are extreme, the improvement of ordinary people's quality of life is too often neglected.
+</p>
+
+<p>
+Today, children and young people in our area—from the youngest boys to the older ones—are becoming increasingly involved in the world of addiction and substance abuse. This is deeply saddening and extremely alarming for the future. Immediate collective action is necessary to save the next generation.
+</p>
+
+</div>
+<br>
+<br> 
+<br>
+<image src="ttt.gif" >
+<br>
+<br>
+
+<div style="width: 100%; margin: 0 auto; padding: 35px; background: linear-gradient(135deg,#021f32,#063750,#0a4d70,#0d678c,#1284a8); border-radius: 15px; color: #ffffff; font-family: 'Poppins', sans-serif; text-align: center; line-height: 32px; font-size: 20px;">
+
+<h2 style="margin-bottom: 15px; font-size: 30px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;">
+✨ A Journey Through Silence and Light ✨
+</h2>
+
+<p style="max-width: 900px; margin: auto;">
+Some places do not belong to the world outside — they belong to the heart.  
+Where the wind whispers softly through the leaves,  
+where water touches the golden light,  
+and where time slows down just enough  
+to let the soul breathe again.
+</p>
+
+<p style="margin-top: 15px; max-width: 900px; margin: auto;">
+If you ever feel lost,  
+come back to the place where your smile was born…  
+a place that reminds you who you truly are —  
+not what the world wants you to be.
+</p>
+
+<p style="margin-top: 18px; font-weight: 600; font-size: 22px;">
+🌿 "Peace is not a destination — it is a return." 🌿
+</p>
+
+</div>
+
+<br>
+<br>
+
+
+<div style="text-align: center; margin-top: 35px; margin-bottom: 20px;">
+    <a href="https://web.facebook.com/md.tanjimulislam530105" target="_blank" 
+       style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" 
+             alt="Facebook" 
+             style="width: 60px; height: 60px; border-radius: 50%; transition: 0.4s; box-shadow: 0px 0px 0px rgba(0,0,0,0);"
+             onmouseover="this.style.transform='scale(1.15)'; this.style.boxShadow='0 0 18px #1877f2';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 transparent';">
+    </a>
+</div>
+<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://tanjim82.blogspot.com/" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/708/708593.png"
+             alt="Blogspot"
+             style="width: 65px; height: 65px; border-radius: 15px; transition: 0.4s;"
+             onmouseover="this.style.transform='scale(1.18)'; this.style.filter='drop-shadow(0 0 14px #ff6a00)';"
+             onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 0 0 transparent)';">
+    </a>
+</div>
+<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://www.youtube.com/@TanzimTechOfficial" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+             alt="YouTube"
+             style="width: 65px; height: 65px; border-radius: 15px; transition: 0.4s;"
+             onmouseover="this.style.transform='scale(1.18)'; this.style.filter='drop-shadow(0 0 14px #ff0000)';"
+             onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 0 0 transparent)';">
+    </a>
+</div>
+<div id="videoBox">
+    <h2 style="color: #0a4d70;">🎬 My Video Gallery</h2>
+    <hr style="width: 50%; margin: auto; margin-bottom: 15px;">
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v1.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v2.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v3.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v4.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v5.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v6.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v7.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v8.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v9.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v10.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v11.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v12.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v13.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v14.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v15.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v16.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v17.mp4" type="video/mp4">
+    </video>
+
+    <video width="100%" height="300" controls style="border-radius: 10px; margin-bottom: 15px;">
+        <source src="v18.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <button id="closeBtn" onclick="document.getElementById('videoBox').style.display='none'">Close Videos</button>
+</div>
+
+
+
+
+</body>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+</html>
